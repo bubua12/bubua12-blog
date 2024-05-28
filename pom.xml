@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.7</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.bubua12.blog</groupId>
+    <artifactId>bubua12-blog</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <description>布布爱一二de博客</description>
+
+    <properties>
+        <druid.pool.version>1.2.20</druid.pool.version>
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <hutool.version>5.8.22</hutool.version>
+        <commons-collections4.version>4.4</commons-collections4.version>
+        <fastjson2.version>2.0.45</fastjson2.version>
+
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--bubua12 commons api-->
+        <dependency>
+            <groupId>com.bubua12.api</groupId>
+            <artifactId>bubua12-commons-api</artifactId>
+            <version>0.0.1.RELEASE</version>
+        </dependency>
+
+        <!--starter web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
